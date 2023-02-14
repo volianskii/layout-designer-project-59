@@ -1,0 +1,31 @@
+{
+  "name": "html5-css-boilerplate",
+  "version": "0.1.0",
+  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
+  },
+  "main": "",
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^2.0.1",
+    "htmlhint": "^1.1.4",
+    "sass": "^1.58.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.4.0",
+    "surge": "^0.23.1"
+  },
+  "author": "Nikita Mikhaylov",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0"
+  }
+}
