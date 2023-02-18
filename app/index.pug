@@ -1,0 +1,22 @@
+doctype html
+html(lang="en").h-100
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Layout-designer-project-59
+    link(rel="stylesheet", href="styles/app.css")
+  body.h-100
+    .container-xxl.h-100.bg-gray.p-0.p-md-4
+      .row.h-100.bg-white.rounded-0.rounded-md-4.mx-0.overflow-hidden 
+        .col-12.col-md-4.border-end-md.p-0.h-100.d-flex.flex-column
+          .h-100
+            .header-block.bg-header
+              include components/navigation.pug
+            .pt-5.px-4.pb-5.hide-scrollbar.h-100.overflow-auto
+              h1.h2.mb-4.fw-bold Контакты
+              include components/search.pug
+              include components/contact.pug
+        .col.d-none.d-md-flex.flex-column.p-0.justify-content-center
+          .d-md-flex.flex-column
+            include components/welcome.pug

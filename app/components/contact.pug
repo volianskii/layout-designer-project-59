@@ -1,0 +1,46 @@
+-
+  let contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      status: "Онлайн",
+      avatar: "/images/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "/images/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      status: "Был онлайн вчера",
+      avatar: "/images/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      status: "Был онлайн 3 часа назад",
+      avatar: "/images/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      status: "Была онлайн вчера",
+      avatar: "/images/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      status: "Был онлайн вчера",
+      avatar: "/images/avatar_6.jpg"
+    }],
+  };
+
+each people, letter in contacts
+  p.text-muted.mt-5= letter
+  each user in people
+    a.user-card.shadow-sm.mb-3(href= '#')
+      img(src= user.avatar alt= user.name).avatar.ms-3
+      .user-card-info
+        p.fw-bold.mb-0= user.name
+        p.mb-0.status= user.status

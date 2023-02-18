@@ -1,0 +1,16 @@
+/* Добавляем в переменные rounded и border-end ключ responsive и значение true,  чтобы генерировались классы с -md, -sm- и тд.*/
+
+$utilities: map-merge(
+	$utilities,
+	(
+		"rounded": map-merge(
+			map-get($utilities, "rounded"),
+			( responsive: true ),
+		),
+
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      ( responsive: true),
+    )
+	),
+);
