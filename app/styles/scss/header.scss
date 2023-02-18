@@ -33,3 +33,16 @@
 }
 
 
+@media(max-width: 568px) {
+  .hexlet {
+    margin-right: 183px;
+  }
+
+  .grid {
+    column-gap: 40px;
+  }
+
+  .profile-space {
+    margin: 0;
+  }
+}

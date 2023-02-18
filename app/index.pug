@@ -10,12 +10,10 @@ html(lang="en").h-100
     .container-xxl.h-100.bg-gray.p-0.p-md-4
       .row.h-100.bg-white.rounded-0.rounded-md-4.mx-0.overflow-hidden 
         .col-12.col-md-4.border-end-md.p-0.h-100.d-flex.flex-column
-          .h-100
-            .header-block.bg-header
+          .h-100.d-flex.flex-column
+            .header-block.bg-header.order-2.order-md-1  
               include components/navigation.pug
-            .pt-5.px-4.pb-5.hide-scrollbar.h-100.overflow-auto
-              h1.h2.mb-4.fw-bold Контакты
-              include components/search.pug
+            .pt-5.px-4.hide-scrollbar.h-100.overflow-auto.order-1.order-md-2
               include components/contact.pug
         .col.d-none.d-md-flex.flex-column.p-0.justify-content-center
           .d-md-flex.flex-column

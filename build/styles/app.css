@@ -12261,6 +12261,17 @@ textarea.form-control-lg {
   filter: invert(1);
 }
 
+@media (max-width: 568px) {
+  .hexlet {
+    margin-right: 183px;
+  }
+  .grid {
+    column-gap: 40px;
+  }
+  .profile-space {
+    margin: 0;
+  }
+}
 .avatar {
   border-radius: 50px;
   width: 50px;
