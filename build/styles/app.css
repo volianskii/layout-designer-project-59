@@ -12289,6 +12289,7 @@ textarea.form-control-lg {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  padding-right: 40px;
   text-decoration: none;
   color: black;
 }
@@ -12303,12 +12304,29 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem;
+  width: 286px;
+  height: 45px;
+  margin: 1.5rem 0;
+  margin-left: 1.5rem;
+}
+
+.name-time {
+  display: flex;
+  justify-content: space-between;
 }
 
 .status {
   font-size: 80%;
   color: #6C757D;
+  /*   Троеточие в конце длинного сообщения */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.time {
+  font-size: 80%;
+  color: #ADB5BD;
 }
 
 .hide-scrollbar {
@@ -12319,4 +12337,10 @@ textarea.form-control-lg {
 }
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 568px) {
+  .user-card-info {
+    width: 236px;
+  }
 }

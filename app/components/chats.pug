@@ -1,0 +1,34 @@
+-
+  var chats = [
+    {
+      name: "Вениамин Редакторович",
+      msg: "o_O",
+      avatar: "./images/avatar_4.jpg",
+      time: "11:45"
+    },
+    {
+      name: "Джедай Падаванов",
+      msg: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+      avatar: "./images/avatar_2.jpg",
+      time: "10:12"
+    },
+    {
+      name: "Алексей Примадонин",
+      msg: "Тесты упали >_<",
+      avatar: "./images/avatar_3.jpg",
+      time: "08:53"
+    },
+  ];
+
+section.chats.tab-pane.fade(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
+  h1.h2.mb-4.fw-bold Чаты
+  include search.pug
+
+  each user in chats
+    a.user-card.shadow-sm.mb-3(href= '#')
+      img(src= user.avatar alt= user.name).avatar.ms-3
+      .user-card-info
+        .name-time
+          p.fw-bold.mb-0= user.name
+          p.time.mb-0= user.time
+        p.mb-0.status= user.msg

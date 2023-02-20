@@ -14,48 +14,79 @@
           <div class="h-100 d-flex flex-column">
             <div class="header-block bg-header order-2 order-md-1"> 
               <div class="d-flex align-items-center"><a href="#"><img class="hexlet invert" src="images/logo.svg" alt="hexlet logo"></a>
-                <div class="grid"> <a class="d-flex text-decoration-none" href="#"> <img class="me-0 me-md-2 invert" src="images/people.svg" alt="contacts logo">
-                    <p class="mb-0 d-none d-md-inline">Контакты </p></a><a class="d-flex text-decoration-none" href="#"> <img class="me-0 me-md-2 invert" src="images/chat.svg" alt="chat logo">
-                    <p class="mb-0 d-none d-md-inline">Сообщения</p></a><a class="d-flex text-decoration-none" href="#"> <img class="profile-space invert" src="images/person.svg" alt="profile logo">
+                <div class="grid nav" id="nav-tab" role="tablist"> <a class="d-flex text-decoration-none nav-link active" href="#contact" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="true"> <img class="me-0 me-md-2 invert" src="images/people.svg" alt="contacts logo">
+                    <p class="mb-0 d-none d-md-inline">Контакты </p></a><a class="d-flex text-decoration-none nav-link" href="#chats" id="nav-chats-tab" data-bs-toggle="tab" data-bs-target="#chats" type="button" role="tab" aria-controls="nav-chats" aria-selected="false"> <img class="me-0 me-md-2 invert" src="images/chat.svg" alt="chat logo">
+                    <p class="mb-0 d-none d-md-inline">Сообщения</p></a><a class="d-flex text-decoration-none nav-link" href="#profile" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <img class="profile-space invert" src="images/person.svg" alt="profile logo">
                     <p class="mb-0 d-none d-md-inline">Профиль</p></a></div>
               </div>
             </div>
-            <div class="pt-5 px-4 hide-scrollbar h-100 overflow-auto order-1 order-md-2">
-              <h1 class="h2 mb-4 fw-bold">Контакты</h1>
-              <div class="shadow-sm w-100">
-                <form action=""> 
-                  <input class="p-4 w-100 border-0" type="text" placeholder="Поиск по контактам">
-                </form>
-              </div>
-              <p class="text-muted mt-5">A</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_3.jpg" alt="Алексей Примадонин">
-                <div class="user-card-info">
-                  <p class="fw-bold mb-0">Алексей Примадонин</p>
-                  <p class="mb-0 status">Онлайн</p>
-                </div></a>
-              <p class="text-muted mt-5">В</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_4.jpg" alt="Вениамин Редакторович">
-                <div class="user-card-info">
-                  <p class="fw-bold mb-0">Вениамин Редакторович</p>
-                  <p class="mb-0 status">Онлайн</p>
-                </div></a>
-              <p class="text-muted mt-5">Д</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_2.jpg" alt="Джедай Падаванов">
-                <div class="user-card-info">
-                  <p class="fw-bold mb-0">Джедай Падаванов</p>
-                  <p class="mb-0 status">Был онлайн вчера</p>
-                </div></a>
-              <p class="text-muted mt-5">К</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_1.jpg" alt="Кодовёнок Хекслетович">
-                <div class="user-card-info">
-                  <p class="fw-bold mb-0">Кодовёнок Хекслетович</p>
-                  <p class="mb-0 status">Был онлайн 3 часа назад</p>
-                </div></a><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_5.jpg" alt="Королева Верстальщина">
-                <div class="user-card-info">
-                  <p class="fw-bold mb-0">Королева Верстальщина</p>
-                  <p class="mb-0 status">Была онлайн вчера</p>
-                </div></a>
-              <p class="text-muted mt-5">П</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_6.jpg" alt="Питонист Джангович">
-                <div class="user-card-info">
-                  <p class="fw-bold mb-0">Питонист Джангович</p>
-                  <p class="mb-0 status">Был онлайн вчера</p>
-                </div></a>
+            <div class="pt-5 px-4 hide-scrollbar h-100 overflow-auto order-1 order-md-2 tab-content">
+              <section class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h1 class="h2 mb-4 fw-bold">Контакты</h1>
+                <div class="shadow-sm w-100">
+                  <form action=""> 
+                    <input class="p-4 w-100 border-0" type="text" placeholder="Поиск по контактам">
+                  </form>
+                </div>
+                <p class="text-muted mt-5">A</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_3.jpg" alt="Алексей Примадонин">
+                  <div class="user-card-info">
+                    <p class="fw-bold mb-0">Алексей Примадонин</p>
+                    <p class="mb-0 status">Онлайн</p>
+                  </div></a>
+                <p class="text-muted mt-5">В</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_4.jpg" alt="Вениамин Редакторович">
+                  <div class="user-card-info">
+                    <p class="fw-bold mb-0">Вениамин Редакторович</p>
+                    <p class="mb-0 status">Онлайн</p>
+                  </div></a>
+                <p class="text-muted mt-5">Д</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_2.jpg" alt="Джедай Падаванов">
+                  <div class="user-card-info">
+                    <p class="fw-bold mb-0">Джедай Падаванов</p>
+                    <p class="mb-0 status">Был онлайн вчера</p>
+                  </div></a>
+                <p class="text-muted mt-5">К</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_1.jpg" alt="Кодовёнок Хекслетович">
+                  <div class="user-card-info">
+                    <p class="fw-bold mb-0">Кодовёнок Хекслетович</p>
+                    <p class="mb-0 status">Был онлайн 3 часа назад</p>
+                  </div></a><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_5.jpg" alt="Королева Верстальщина">
+                  <div class="user-card-info">
+                    <p class="fw-bold mb-0">Королева Верстальщина</p>
+                    <p class="mb-0 status">Была онлайн вчера</p>
+                  </div></a>
+                <p class="text-muted mt-5">П</p><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="/images/avatar_6.jpg" alt="Питонист Джангович">
+                  <div class="user-card-info">
+                    <p class="fw-bold mb-0">Питонист Джангович</p>
+                    <p class="mb-0 status">Был онлайн вчера</p>
+                  </div></a>
+              </section>
+              <section class="chats tab-pane fade" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
+                <h1 class="h2 mb-4 fw-bold">Чаты</h1>
+                <div class="shadow-sm w-100">
+                  <form action=""> 
+                    <input class="p-4 w-100 border-0" type="text" placeholder="Поиск по контактам">
+                  </form>
+                </div><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="./images/avatar_4.jpg" alt="Вениамин Редакторович">
+                  <div class="user-card-info">
+                    <div class="name-time">
+                      <p class="fw-bold mb-0">Вениамин Редакторович</p>
+                      <p class="time mb-0">11:45</p>
+                    </div>
+                    <p class="mb-0 status">o_O</p>
+                  </div></a><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="./images/avatar_2.jpg" alt="Джедай Падаванов">
+                  <div class="user-card-info">
+                    <div class="name-time">
+                      <p class="fw-bold mb-0">Джедай Падаванов</p>
+                      <p class="time mb-0">10:12</p>
+                    </div>
+                    <p class="mb-0 status">Привет, скоро третий проект? Уже скоро надо будет выложить</p>
+                  </div></a><a class="user-card shadow-sm mb-3" href="#"><img class="avatar ms-3" src="./images/avatar_3.jpg" alt="Алексей Примадонин">
+                  <div class="user-card-info">
+                    <div class="name-time">
+                      <p class="fw-bold mb-0">Алексей Примадонин</p>
+                      <p class="time mb-0">08:53</p>
+                    </div>
+                    <p class="mb-0 status">Тесты упали &gt;_&lt;</p>
+                  </div></a>
+              </section>
             </div>
           </div>
         </div>
