@@ -1,0 +1,28 @@
+section.tab-pane.fade.show.active(id='profile' role='tabpanel' aria-labelledby='nav-profile-tab')    
+  h1.h2.mb-4.fw-bold Профиль
+  include search.pug
+  .card.p-3.mb-2.mb-md-3.mt-6.mt-md-7.d-flex.flex-column.align-items-center.text-center.border-0
+    img(src="images/avatar_1.jpg", alt="Кодовёнок").profile-avatar
+    p.fw-bold.mb-0.mt-2 Кодовёнок Хекслетович
+    p.mt-4.text-black-50 Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+  ul.py-3.mx-3.mt-2.mt-md-10.mb-8.mb-md-0.list-group.list-group-flush 
+    li.list-group-item.my-2.d-flex.align-items-center.justify-content-between.w-100
+      .profile-contacts
+        p.mb-0.text-black-50 Страна
+        p.mb-0 Москва, Россия
+      img.text-black-50(src="images/globe.svg", alt="globe")
+    li.list-group-item.my-2.d-flex.align-items-center.justify-content-between.w-100 
+      .profile-contacts
+        p.mb-0.text-black-50 Телефон
+        p.mb-0 +7 (499) 123-45-67
+      img.text-black-50(src="images/phone.svg", alt="phone")
+    li.list-group-item.my-2.d-flex.align-items-center.justify-content-between.w-100
+      .profile-contacts
+        p.mb-0.text-black-50 Email
+        p.mb-0 nikita.m@hexlet.io
+      img.text-black-50(src="images/letter.svg", alt="letter")
+    li.list-group-item.my-2.d-flex.align-items-center.justify-content-between.w-100.border-bottom.border-2 
+      .profile-contacts
+        p.mb-0.text-black-50 Twitter
+        p.mb-0 @n_mikhaylov
+      img.text-black-50(src="images/people.svg", alt="people")

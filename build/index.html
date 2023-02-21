@@ -13,17 +13,17 @@
         <div class="col-12 col-md-4 border-end-md p-0 h-100 d-flex flex-column">
           <div class="h-100 d-flex flex-column">
             <div class="header-block bg-header order-2 order-md-1"> 
-              <div class="d-flex align-items-center"><a href="#"><img class="hexlet invert" src="images/logo.svg" alt="hexlet logo"></a>
-                <div class="grid nav" id="nav-tab" role="tablist"> <a class="d-flex text-decoration-none nav-link active" href="#contact" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="true"> <img class="me-0 me-md-2 invert" src="images/people.svg" alt="contacts logo">
+              <nav class="d-flex align-items-center"><a href="#"><img class="hexlet invert" src="images/logo.svg" alt="hexlet logo"></a>
+                <div class="grid nav" id="nav-tab" role="tablist"> <a class="d-flex text-decoration-none nav-link active" href="#contacts" id="nav-contacts-tab" data-bs-toggle="tab" data-bs-target="#contacts" type="button" role="tab" aria-controls="nav-contacts" aria-selected="true"> <img class="me-0 me-md-2 invert" src="images/people.svg" alt="contacts logo">
                     <p class="mb-0 d-none d-md-inline">Контакты </p></a><a class="d-flex text-decoration-none nav-link" href="#chats" id="nav-chats-tab" data-bs-toggle="tab" data-bs-target="#chats" type="button" role="tab" aria-controls="nav-chats" aria-selected="false"> <img class="me-0 me-md-2 invert" src="images/chat.svg" alt="chat logo">
                     <p class="mb-0 d-none d-md-inline">Сообщения</p></a><a class="d-flex text-decoration-none nav-link" href="#profile" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <img class="profile-space invert" src="images/person.svg" alt="profile logo">
                     <p class="mb-0 d-none d-md-inline">Профиль</p></a></div>
-              </div>
+              </nav>
             </div>
             <div class="pt-5 px-4 hide-scrollbar h-100 overflow-auto order-1 order-md-2 tab-content">
-              <section class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <section class="tab-pane fade" id="contacts" role="tabpanel" aria-labelledby="nav-contacts-tab">
                 <h1 class="h2 mb-4 fw-bold">Контакты</h1>
-                <div class="shadow-sm w-100">
+                <div class="w-100 border-end-0 border-start-0 border-bottom">
                   <form action=""> 
                     <input class="p-4 w-100 border-0" type="text" placeholder="Поиск по контактам">
                   </form>
@@ -58,9 +58,9 @@
                     <p class="mb-0 status">Был онлайн вчера</p>
                   </div></a>
               </section>
-              <section class="chats tab-pane fade" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
+              <section class="tab-pane fade" id="chats" role="tabpanel" aria-labelledby="nav-chats-tab">
                 <h1 class="h2 mb-4 fw-bold">Чаты</h1>
-                <div class="shadow-sm w-100">
+                <div class="w-100 border-end-0 border-start-0 border-bottom">
                   <form action=""> 
                     <input class="p-4 w-100 border-0" type="text" placeholder="Поиск по контактам">
                   </form>
@@ -86,6 +86,44 @@
                     </div>
                     <p class="mb-0 status">Тесты упали &gt;_&lt;</p>
                   </div></a>
+              </section>
+              <section class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">   
+                <h1 class="h2 mb-4 fw-bold">Профиль</h1>
+                <div class="w-100 border-end-0 border-start-0 border-bottom">
+                  <form action=""> 
+                    <input class="p-4 w-100 border-0" type="text" placeholder="Поиск по контактам">
+                  </form>
+                </div>
+                <div class="card p-3 mb-2 mb-md-3 mt-6 mt-md-7 d-flex flex-column align-items-center text-center border-0"><img class="profile-avatar" src="images/avatar_1.jpg" alt="Кодовёнок">
+                  <p class="fw-bold mb-0 mt-2">Кодовёнок Хекслетович</p>
+                  <p class="mt-4 text-black-50">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+                </div>
+                <ul class="py-3 mx-3 mt-2 mt-md-10 mb-8 mb-md-0 list-group list-group-flush"> 
+                  <li class="list-group-item my-2 d-flex align-items-center justify-content-between w-100">
+                    <div class="profile-contacts">
+                      <p class="mb-0 text-black-50">Страна</p>
+                      <p class="mb-0">Москва, Россия</p>
+                    </div><img class="text-black-50" src="images/globe.svg" alt="globe">
+                  </li>
+                  <li class="list-group-item my-2 d-flex align-items-center justify-content-between w-100"> 
+                    <div class="profile-contacts">
+                      <p class="mb-0 text-black-50">Телефон</p>
+                      <p class="mb-0">+7 (499) 123-45-67</p>
+                    </div><img class="text-black-50" src="images/phone.svg" alt="phone">
+                  </li>
+                  <li class="list-group-item my-2 d-flex align-items-center justify-content-between w-100">
+                    <div class="profile-contacts">
+                      <p class="mb-0 text-black-50">Email</p>
+                      <p class="mb-0">nikita.m@hexlet.io</p>
+                    </div><img class="text-black-50" src="images/letter.svg" alt="letter">
+                  </li>
+                  <li class="list-group-item my-2 d-flex align-items-center justify-content-between w-100 border-bottom border-2"> 
+                    <div class="profile-contacts">
+                      <p class="mb-0 text-black-50">Twitter</p>
+                      <p class="mb-0">@n_mikhaylov</p>
+                    </div><img class="text-black-50" src="images/people.svg" alt="people">
+                  </li>
+                </ul>
               </section>
             </div>
           </div>
