@@ -1,12 +1,45 @@
-.flex.flex-column.h-100    
+.d-flex.flex-column.h-100    
   .user-card.position-sticky.border-bottom
     img(src= "/images/avatar_4.jpg" alt= "Avatar").avatar.ms-3
-        .user-card-info
-          p.fw-bold.mb-0 Вениамин Редакторович
-          p.mb-0.status Онлайн
+    .user-card-info
+      p.fw-bold.mb-0 Вениамин Редакторович
+      p.mb-0.status Онлайн
 
-  .section.p-4.hide-scrollbar.h-100 
-    .d-flex.msg-left
-      img.avatar.d-none.d-md-block.shadow-sm(src="./images/avatar_4.jpg", alt="avatar")
-      
-  .section
+  .p-5.hide-scrollbar.h-100.d-flex.flex-column 
+    .d-flex.msg-left.align-items-end.mb-3.align-self-start
+      img.avatar.d-none.d-md-block.shadow-sm.me-3(src="./images/avatar_4.jpg", alt="avatar")
+      .msg.rounded-4.p-4.shadow-sm
+        p.fw-bold.mb-1 Вениамин Редакторович
+        p.text-muted.mb-0.pb-2.border-bottom Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+        p.time.mb-0.mt-1 8 минут назад
+
+    .d-flex.msg-right.align-items-end.mb-3.align-self-end
+      img.avatar.d-none.d-md-block.shadow-sm.me-3(src="./images/avatar_1.jpg", alt="avatar")
+      .msg.rounded-4.p-4.shadow-sm.bg-header
+        p.text-white.mb-0.pb-2.border-bottom Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+        p.time.mb-0.mt-1 8 минут назад
+
+    .d-flex.msg-left.align-items-end.mb-3.align-self-start
+      img.avatar.d-none.d-md-block.shadow-sm.me-3(src="./images/avatar_4.jpg", alt="avatar")
+      .msg.rounded-4.p-4.shadow-sm
+        p.fw-bold.mb-1 Вениамин Редакторович
+        p.text-muted.mb-0.pb-2.border-bottom Лады
+        p.time.mb-0.mt-1 5 минут назад
+
+    .d-flex.msg-right.align-items-end.mb-3.align-self-end
+      img.avatar.d-none.d-md-block.shadow-sm.me-3(src="./images/avatar_1.jpg", alt="avatar")
+      .msg.rounded-4.p-4.shadow-sm.bg-header
+        p.text-white.mb-0.pb-2.border-bottom А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
+        p.time.mb-0.mt-1 3 минуты назад
+
+    .d-flex.msg-left.align-items-end.mb-3.align-self-start
+      img.avatar.d-none.d-md-block.shadow-sm.me-3(src="./images/avatar_4.jpg", alt="avatar")
+      .msg.rounded-4.p-4.shadow-sm
+        p.fw-bold.mb-1 Вениамин Редакторович
+        p.text-muted.mb-0.pb-2.border-bottom о_О
+        p.time.mb-0.mt-1 Только что
+  
+  form.position-relative.p-0.mx-5.d-flex.align-items-center.border-top.justify-content-between(action='')
+    input.py-10.px-4.border-0(type='text' placeholder='Напишите сообщение...')
+    button.msg-button.bg-header.border-0.rounded-circle.me-3.me-md-4.text-white(type='submit')
+      img(src="/images/cursor.svg", alt="cursor")

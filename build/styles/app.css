@@ -13172,7 +13172,7 @@ textarea.form-control-lg {
 }
 
 .status {
-  font-size: 80%;
+  font-size: 0.875em;
   color: #6C757D;
   /*   Троеточие в конце длинного сообщения */
   white-space: nowrap;
@@ -13181,7 +13181,7 @@ textarea.form-control-lg {
 }
 
 .time {
-  font-size: 80%;
+  font-size: 0.875em;
   color: #ADB5BD;
 }
 
@@ -13208,4 +13208,21 @@ textarea.form-control-lg {
 
 .profile-contacts {
   font-size: 0.875em;
+}
+
+.msg {
+  max-width: 558px;
+}
+
+.msg-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+.msg-button img {
+  height: 21px;
+  width: 21px;
+  filter: invert(1);
 }

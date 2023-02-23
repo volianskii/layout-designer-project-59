@@ -47,7 +47,7 @@
 }
 
 .status {
-  font-size: 80%;
+  font-size: $small-font-size;
   color: #6C757D;
 /*   Троеточие в конце длинного сообщения */
 
@@ -57,7 +57,7 @@
 }
 
 .time {
-  font-size: 80%;
+  font-size: $small-font-size;
   color: #ADB5BD;
 }
 
