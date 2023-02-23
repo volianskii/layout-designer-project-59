@@ -8,10 +8,12 @@
   justify-content: center;
   height: 50px;
   width: 50px;
-  
+
   & img {
     height: 21px;
     width: 21px;
     filter: invert(1);
+
+    
   }
 }
