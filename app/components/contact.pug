@@ -36,9 +36,9 @@
     }],
   };
 
-- let search = 'Поиск по контактам';
+- placeh = 'Поиск по контактам';
 
-section.tab-pane.fade(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
+section.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
   h1.h2.mb-4.fw-bold Контакты
   include search.pug
 
@@ -50,3 +50,4 @@ section.tab-pane.fade(id='contacts' role='tabpanel' aria-labelledby='nav-contact
         .user-card-info
           p.fw-bold.mb-0= user.name
           p.mb-0.status= user.status
+

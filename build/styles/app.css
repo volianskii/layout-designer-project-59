@@ -13105,7 +13105,7 @@ textarea.form-control-lg {
   width: 15px;
   height: 25px;
   margin-left: 21px;
-  margin-right: 33px;
+  /* margin-right: 33px; */
 }
 
 .profile-space {
@@ -13113,14 +13113,22 @@ textarea.form-control-lg {
   margin-left: 2px;
 }
 
+.logo-25 {
+  width: 25px;
+}
+
+.logo-18 {
+  width: 18.75px;
+}
+
 .invert {
   filter: invert(1);
 }
 
 @media (max-width: 568px) {
-  .hexlet {
-    margin-right: 183px;
-  }
+  /*   .hexlet {
+      margin-right: 183px;
+    } */
   .grid {
     column-gap: 40px;
   }
@@ -13225,4 +13233,13 @@ textarea.form-control-lg {
   height: 21px;
   width: 21px;
   filter: invert(1);
+}
+
+@media (max-width: 568px) {
+  .msg {
+    max-width: 318px;
+  }
+  .nopadding {
+    margin: -48px -24px 0 -24px;
+  }
 }

@@ -20,12 +20,20 @@
   width: 15px;
   height: 25px;
   margin-left: 21px;
-  margin-right: 33px;
+  /* margin-right: 33px; */
 }
 
 .profile-space {
   margin-right: 11.12px;
   margin-left: 2px;
+}
+
+.logo-25 {
+  width: 25px;
+}
+
+.logo-18 {
+  width: 18.75px;
 }
 
 .invert {
@@ -34,9 +42,9 @@
 
 
 @media(max-width: 568px) {
-  .hexlet {
+/*   .hexlet {
     margin-right: 183px;
-  }
+  } */
 
   .grid {
     column-gap: 40px;
