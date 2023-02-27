@@ -13125,6 +13125,12 @@ textarea.form-control-lg {
   filter: invert(1);
 }
 
+.navigation-block {
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+  margin-right: 1rem;
+}
+
 @media (max-width: 568px) {
   /*   .hexlet {
       margin-right: 183px;
@@ -13135,6 +13141,10 @@ textarea.form-control-lg {
   .profile-space {
     margin: 0;
   }
+  /*   .logo-25 {
+      padding-left: 20px;
+      padding-right: 20px;
+    } */
 }
 .avatar {
   border-radius: 50px;
@@ -13235,11 +13245,21 @@ textarea.form-control-lg {
   filter: invert(1);
 }
 
+.dialog-form {
+  position: relative;
+}
+
 @media (max-width: 568px) {
   .msg {
     max-width: 318px;
   }
   .nopadding {
     margin: -48px -24px 0 -24px;
+  }
+  .dialog-form {
+    bottom: 72px;
+  }
+  .absolute {
+    position: absolute;
   }
 }

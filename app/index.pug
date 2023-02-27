@@ -10,17 +10,14 @@ html(lang="en").h-100
     .container-xxl.h-100.bg-gray.p-0.p-md-4
       .row.h-100.bg-white.rounded-0.rounded-md-4.mx-0.overflow-hidden 
         .col-12.col-md-4.border-end-md.p-0.h-100.d-flex.flex-column
-          
-          .header-block.bg-header.order-2.order-md-1  
-            include components/navigation.pug
-          .pt-5.px-4.hide-scrollbar.h-100.overflow-auto.order-1.order-md-2.tab-content
-            section.tab-pane.d-md-none.fade(id='current-chat' role='tabpanel' aria-labelledby='nav-dialog-tab')
-              include components/dialog.pug
-            include components/contact.pug
-            include components/chats.pug
-            include components/profile.pug
-        .col.d-none.d-md-block.align-content-center.p-0.h-100
-          
-            include components/dialog.pug
+          .h-100.d-flex.flex-column
+            .header-block.bg-header.order-2.order-md-1  
+              include components/navigation.pug
+            .pt-5.px-4.hide-scrollbar.h-100.overflow-auto.order-1.order-md-2.tab-content
+              include components/contact.pug
+              include components/chats.pug
+              include components/profile.pug
+        .col.d-none.d-md-flex.flex-column.p-0.h-100.justify-content-center
+          include components/welcome.pug
 
     script(src='js/bootstrap.min.js')

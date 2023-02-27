@@ -16,6 +16,10 @@
   }
 }
 
+.dialog-form {
+  position: relative;
+}
+
 @media(max-width: 568px) {
   .msg {
     max-width: 318px;
@@ -23,5 +27,13 @@
 
   .nopadding {
     margin: -48px -24px 0 -24px;
+  }
+
+  .dialog-form {
+    bottom: 72px;
+  }
+
+  .absolute {
+    position: absolute;
   }
 }

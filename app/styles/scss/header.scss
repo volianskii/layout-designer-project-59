@@ -40,6 +40,11 @@
   filter: invert(1);
 }
 
+.navigation-block {
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+  margin-right: 1rem;
+}
 
 @media(max-width: 568px) {
 /*   .hexlet {
@@ -53,4 +58,10 @@
   .profile-space {
     margin: 0;
   }
+
+/*   .logo-25 {
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+
 }
