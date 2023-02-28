@@ -21,17 +21,30 @@
   ];
 
 - placeh = 'Поиск по сообщениям';
+if page === 'chat'
+  section.tab-pane.fade.show.active(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
+    h1.h2.mb-4.fw-bold Чаты
+    include search.pug
 
-section.tab-pane.fade(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
-  h1.h2.mb-4.fw-bold Чаты
-  include search.pug
+    each user in chats
+      a.user-card.shadow-sm.mb-3(href= '#')
+        img(src= user.avatar alt= user.name).avatar.ms-3
+        .user-card-info
+          .name-time
+            p.fw-bold.mb-0= user.name
+            p.time.mb-0= user.time
+          p.mb-0.status= user.msg
+else 
+  section.tab-pane.fade(id='chats' role='tabpanel' aria-labelledby='nav-chats-tab')
+    h1.h2.mb-4.fw-bold Чаты
+    include search.pug
 
-  each user in chats
-    a.user-card.shadow-sm.mb-3(href= '#')
-      img(src= user.avatar alt= user.name).avatar.ms-3
-      .user-card-info
-        .name-time
-          p.fw-bold.mb-0= user.name
-          p.time.mb-0= user.time
-        p.mb-0.status= user.msg
+    each user in chats
+      a.user-card.shadow-sm.mb-3(href= '#')
+        img(src= user.avatar alt= user.name).avatar.ms-3
+        .user-card-info
+          .name-time
+            p.fw-bold.mb-0= user.name
+            p.time.mb-0= user.time
+          p.mb-0.status= user.msg
         
