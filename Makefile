@@ -2,9 +2,9 @@ install:
 	npm install
 
 lint:
-	npx stylelint ./app/styles/*.css
-	npx stylelint ./app/styles/**/*.scss
-	npx htmlhint ./app/*.html
+	npx stylelint ./build/styles/*.css
+	npx stylelint ./app/scss/**/*.scss
+	npx htmlhint ./build/*.html
 
 deploy:
 	npx surge ./build/
