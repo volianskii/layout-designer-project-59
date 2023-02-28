@@ -1,5 +1,6 @@
 /* @use "sass:map"; */
 /* -Вызов утилит и необходимых для них переменных */
+
 @import "custom";
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
@@ -8,9 +9,11 @@
 
 /* -добавление в утилиты новых ключей и значений */
 /* Подключаем адаптивность для классов rounded и border */
+
 @import "./utilities/utilities.scss";
 
 /* -повторный вызов функций генерации классов на основании обновленных утилит */
+
 @import "../../../../node_modules/bootstrap/scss/bootstrap";
 @import "general";
 @import "variables";

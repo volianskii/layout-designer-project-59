@@ -47,7 +47,7 @@
   --bs-light: #fbfbfb;
   --bs-dark: #343a40;
   --bs-gray: #efefef;
-  --bs-header: #4545A5;
+  --bs-header: #4545a5;
   --bs-primary-rgb: 69, 69, 165;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 40, 167, 69;
@@ -3229,8 +3229,8 @@ textarea.form-control-lg {
 
 .btn-header {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #4545A5;
-  --bs-btn-border-color: #4545A5;
+  --bs-btn-bg: #4545a5;
+  --bs-btn-border-color: #4545a5;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #3b3b8c;
   --bs-btn-hover-border-color: #373784;
@@ -3240,8 +3240,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: #34347c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #4545A5;
-  --bs-btn-disabled-border-color: #4545A5;
+  --bs-btn-disabled-bg: #4545a5;
+  --bs-btn-disabled-border-color: #4545a5;
 }
 
 .btn-outline-primary {
@@ -3398,19 +3398,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-header {
-  --bs-btn-color: #4545A5;
-  --bs-btn-border-color: #4545A5;
+  --bs-btn-color: #4545a5;
+  --bs-btn-border-color: #4545a5;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4545A5;
-  --bs-btn-hover-border-color: #4545A5;
+  --bs-btn-hover-bg: #4545a5;
+  --bs-btn-hover-border-color: #4545a5;
   --bs-btn-focus-shadow-rgb: 69, 69, 165;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #4545A5;
-  --bs-btn-active-border-color: #4545A5;
+  --bs-btn-active-bg: #4545a5;
+  --bs-btn-active-border-color: #4545a5;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #4545A5;
+  --bs-btn-disabled-color: #4545a5;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #4545A5;
+  --bs-btn-disabled-border-color: #4545a5;
   --bs-gradient: none;
 }
 
@@ -7132,7 +7132,7 @@ textarea.form-control-lg {
 }
 
 .link-header {
-  color: #4545A5 !important;
+  color: #4545a5 !important;
 }
 .link-header:hover, .link-header:focus {
   color: #373784 !important;
@@ -13098,7 +13098,7 @@ textarea.form-control-lg {
 }
 .grid p {
   font-size: 14px;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 
 .hexlet {
@@ -13168,11 +13168,11 @@ textarea.form-control-lg {
   color: black;
 }
 .user-card:hover {
-  background-color: #4545A5;
-  color: #FBFBFB;
+  background-color: #4545a5;
+  color: #fbfbfb;
 }
 .user-card:hover .status {
-  color: #EFEFEF;
+  color: #efefef;
 }
 .user-card-info {
   display: flex;
@@ -13191,7 +13191,7 @@ textarea.form-control-lg {
 
 .status {
   font-size: 0.875em;
-  color: #6C757D;
+  color: #6c757d;
   /*   Троеточие в конце длинного сообщения */
   white-space: nowrap;
   overflow: hidden;
@@ -13200,7 +13200,7 @@ textarea.form-control-lg {
 
 .time {
   font-size: 0.875em;
-  color: #ADB5BD;
+  color: #adb5bd;
 }
 
 .hide-scrollbar {
