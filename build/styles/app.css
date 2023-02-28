@@ -13230,6 +13230,7 @@ textarea.form-control-lg {
 
 .msg {
   max-width: 558px;
+  background-color: #fbfbfb;
 }
 
 .msg-button {
@@ -13257,7 +13258,7 @@ textarea.form-control-lg {
     margin: -48px -24px 0 -24px;
   }
   .dialog-form {
-    bottom: 72px;
+    bottom: 300px;
   }
   .absolute {
     position: absolute;
