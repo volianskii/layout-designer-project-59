@@ -2,10 +2,10 @@
 /* -Вызов утилит и необходимых для них переменных */
 
 @import "custom";
-@import "../../../../node_modules/bootstrap/scss/functions";
-@import "../../../../node_modules/bootstrap/scss/variables";
-@import "../../../../node_modules/bootstrap/scss/maps";
-@import "../../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/utilities";
 
 /* -добавление в утилиты новых ключей и значений */
 /* Подключаем адаптивность для классов rounded и border */
@@ -14,7 +14,7 @@
 
 /* -повторный вызов функций генерации классов на основании обновленных утилит */
 
-@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "general";
 @import "variables";
 @import "header";
