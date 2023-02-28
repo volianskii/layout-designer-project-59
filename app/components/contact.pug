@@ -38,16 +38,30 @@
 
 - placeh = 'Поиск по контактам';
 
-section.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
-  h1.h2.mb-4.fw-bold Контакты
-  include search.pug
+if page ==='chat'
+  section.tab-pane.fade(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
+    h1.h2.mb-4.fw-bold Контакты
+    include search.pug
 
-  each people, letter in contacts
-    p.text-muted.mt-5= letter
-    each user in people
-      a.user-card.shadow-sm.mb-3(href= '#')
-        img(src= user.avatar alt= user.name).avatar.ms-3
-        .user-card-info
-          p.fw-bold.mb-0= user.name
-          p.mb-0.status= user.status
+    each people, letter in contacts
+      p.text-muted.mt-5= letter
+      each user in people
+        a.user-card.shadow-sm.mb-3(href= '#')
+          img(src= user.avatar alt= user.name).avatar.ms-3
+          .user-card-info
+            p.fw-bold.mb-0= user.name
+            p.mb-0.status= user.status
+else 
+  section.tab-pane.fade.show.active(id='contacts' role='tabpanel' aria-labelledby='nav-contacts-tab')
+    h1.h2.mb-4.fw-bold Контакты
+    include search.pug
+
+    each people, letter in contacts
+      p.text-muted.mt-5= letter
+      each user in people
+        a.user-card.shadow-sm.mb-3(href= '#')
+          img(src= user.avatar alt= user.name).avatar.ms-3
+          .user-card-info
+            p.fw-bold.mb-0= user.name
+            p.mb-0.status= user.status
 
