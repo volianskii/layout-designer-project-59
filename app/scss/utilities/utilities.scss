@@ -1,34 +1,33 @@
-
 /* Добавляем в переменные rounded и border-end ключ responsive
-и значение true,  чтобы генерировались классы с -md, -sm- и тд.*/
+и значение true,  чтобы генерировались классы с -md, -sm- и тд. */
 
 $utilities: map-merge(
-	$utilities,
-	(
-		"rounded": map-merge(
-			map-get($utilities, "rounded"),
-			( responsive: true ),
-		),
-		"border-end": map-merge(
+  $utilities,
+  (
+    "rounded": map-merge(
+      map-get($utilities, "rounded"),
+      ( responsive: true ),
+    ),
+    "border-end": map-merge(
       map-get($utilities, "border-end"),
       ( responsive: true),
-		),
+    ),
     "border-start": map-merge(
       map-get($utilities, "border-start"),
       ( responsive: true),
-		),
+    ),
     "border-top": map-merge(
       map-get($utilities, "border-top"),
       ( responsive: true),
-		),
+    ),
     "border-bottom": map-merge(
       map-get($utilities, "border-bottom"),
       ( responsive: true),
-		),
+    ),
     "border": map-merge(
       map-get($utilities, "border"),
       ( responsive: true),
-		),
+    ),
     "radius-left-top": (
       property: border-top-left-radius,
       class: radius,
