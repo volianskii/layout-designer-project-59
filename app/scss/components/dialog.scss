@@ -21,13 +21,13 @@
   position: relative;
 }
 
-@media(max-width: 568px) {
+@media (max-width: 568px) {
   .msg {
     max-width: 318px;
   }
 
   .nopadding {
-    margin: -48px -24px 0 -24px;
+    margin: -48px -24px 0;
   }
 
   .dialog-form {
