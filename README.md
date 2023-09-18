@@ -1,4 +1,33 @@
-### Hexlet tests and linter status:
+"Messenger" project
 
-[![Actions Status](https://github.com/volianskii/layout-designer-project-59/workflows/hexlet-check/badge.svg)](https://github.com/volianskii/layout-designer-project-59/actions)
-https://synonymous-table.surge.sh/
+The project was created to practice basic layout skills, as well as to get acquainted with the Bootstrap library and the Gulp task manager. It consists of 2 pages. The project is in the process of being finalized.
+
+Technologies used:
+-HTML5;
+-CSS;
+-SCSS;
+-Flexbox;
+-Grid;
+-Bootstrap;
+-Gulp.
+
+Run the project:
+-surge login;
+-make deploy.
+
+Проект "Мессенджер"
+
+Проект создан с целью отработки базовых навыков верстки, а также для знакомства с библиотекой Bootstrap и таск-менеджером Gulp. Он состоит из 2х страниц. Проект находится в процессе доработки.
+
+Используемые технологии:
+-HTML5;
+-CSS;
+-SCSS;
+-Flexbox;
+-Grid;
+-Bootstrap;
+-Gulp.
+
+Запуск проекта:
+-surge login;
+-make deploy.
