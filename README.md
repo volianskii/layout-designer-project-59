@@ -11,9 +11,8 @@ Technologies used:
 -Bootstrap;
 -Gulp.
 
-Run the project:
--surge login;
--make deploy.
+Deploy:
+https://mighty-shelf.surge.sh/
 
 Проект "Мессенджер"
 
@@ -28,6 +27,5 @@ Run the project:
 -Bootstrap;
 -Gulp.
 
-Запуск проекта:
--surge login;
--make deploy.
+Деплой:
+https://mighty-shelf.surge.sh/
